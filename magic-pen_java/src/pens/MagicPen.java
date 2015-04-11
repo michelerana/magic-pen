@@ -4,11 +4,10 @@ public class MagicPen extends Pen {
     
 	private String magicText;
     
-    private static boolean magicOn;
+    private static boolean magicOn = true;
     
     public MagicPen(String magicText) {
     	this.magicText = magicText;
-    	magicOn = true;
     }
     
     public static void toggleMagic() {
