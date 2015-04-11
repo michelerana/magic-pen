@@ -2,11 +2,11 @@ package pens;
 
 public class NormalPen extends Pen {
 	
-	public NormalPen(){
+	public NormalPen() {
 		super();
     }
     
-	public void setColor(String color){
+	public void setColor(String color) {
     	super.setColor(color);
     }
 }
