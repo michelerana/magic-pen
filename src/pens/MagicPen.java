@@ -4,22 +4,21 @@ public class MagicPen extends Pen {
     
 	private String magicText;
     
-    private static boolean magicOn;
+    private static boolean magicOn = true;
     
-    public MagicPen(String magicText){
+    public MagicPen(String magicText) {
     	this.magicText = magicText;
-    	magicOn = true;
     }
     
-    public static void toggleMagic(){
+    public static void toggleMagic() {
     	magicOn = !magicOn;
     }
     
-    public static boolean isMagicOn(){
-    	return magicOn;   	
+    public static boolean isMagicOn() {
+    	return magicOn;
     }
     
-    public String getText(String text){
+    public String getText(String text) {
     	if(magicOn) return this.magicText;
     	else return text;
     }
